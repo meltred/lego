@@ -1,3 +1,7 @@
+<div align="center">
+    <img src="https://github.com/meltred/lego/assets/82411321/36de7d4d-9eed-4685-899b-39e8f863a665" alt="Lego Text Logo" />
+</div>
+
 # Lego - Python Language Practicing
 
 ### Project Setup
