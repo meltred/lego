@@ -2,11 +2,7 @@
     <img src="https://github.com/meltred/lego/assets/82411321/36de7d4d-9eed-4685-899b-39e8f863a665" alt="Lego Text Logo" />
 </div>
 
-# Lego - Python Bootstrapper for AI
-
-<a href="https://github.com/meltred">
-    <img src="https://github.com/meltred/lego/assets/82411321/adc2d7cf-2e3b-47f8-b25f-27d03adbf9aa" alt="Open Sourced by Meltred" />
-</a>
+# Lego - Python Project Bootstrapper for AI
 
 ### Project Setup
 
@@ -121,3 +117,5 @@ poetry version major
 poetry package
 # need pypy credentials
 ```
+
+![legobadge](https://github.com/meltred/lego/assets/82411321/ba2e2850-6cf8-468e-817b-62692045c98e)
