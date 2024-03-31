@@ -1,115 +1,99 @@
-# Lego - Python Language Practicing
+# Lego - Python Project Bootstrapping for AI
 
-### Project Setup
+Using [Pipenv](https://pipenv.pypa.io/), `Pipenv` is also a Virtualization and Dependencies manager like `Poetry`
 
-#### Python can use `pyproject.toml` to list dependencies instead of `requirements.txt` file
+## Docs
 
-Old way was to use `requirements.txt` but its no long recommended.
-
-New way is to use a dependencies manager
-
-## `Poetry` - The Dependencies manager
-
-Link: https://python-poetry.org/
-
-Installation: https://python-poetry.org/docs/#installing-with-pipx
-
-Installation using `Pipx` - **pipx** is used to install global cli tools with isolating then in virtual environments.
+Create a new Project
 
 ```bash
-sudo pip install pipx
+mkdir new_proj
+# Pipenv can install dependencies without already having .lock file
 ```
+
+Install 
 
 ```bash
-pipx install poetry
-# upgrade and uninstall is also supported
+pipenv install numpy
 ```
 
-## Using `poetry`
-
-Init a new project
+Running Program
 
 ```bash
-poetry init
+pipenv run python .\lego\main.py
 ```
 
-Add Dependencies
+### Usage Examples:
+
+Create a new project using Python 3.7, specifically:
 
 ```bash
-poetry add pytest
+pipenv --python 3.7
 ```
 
-Add Dependencies with version
+Remove project virtualenv (inferred from current directory):
 
 ```bash
-poetry add requests@2.12.1
+pipenv --rm
 ```
 
-[Default] Add Dependencies with latest version un-till major change
+Install all dependencies for a project (including dev):
 
 ```bash
-poetry add requests^2.12.1
+pipenv install --dev
 ```
 
-> This will try to install more newer version but not `3.x.x`
-
-Add Dependencies upto latest minor version
+Create a lockfile containing pre-releases:
 
 ```bash
-poetry add requests~2.12.1
+pipenv lock --pre
 ```
 
-> This will install `2.12.5`
-
-Show all the dependencies
+Show a graph of your installed dependencies:
 
 ```bash
-poetry show
-# poetry show requests
+pipenv graph
 ```
 
-Remove dependencies
+Check your installed dependencies for security vulnerabilities:
 
 ```bash
-poetry remove pytest
+pipenv check
 ```
 
-Install Dependencies for new project
+Install a local setup.py into your virtual environment/Pipfile:
 
 ```bash
-poetry install
+pipenv install -e .
 ```
 
-## Virtual Environment
+Use a lower-level pip command:
 
-`poetry` can create virtual environment for running the application
-
-Spawn a new shell
-
-```bash
-poetry shell
+```bash 
+pipenv run pip freeze
 ```
 
-## Versioning
 
-```bash
-poetry version patch
-# `x.y.z` this will bump z
-```
+Commands:
 
-```bash
-poetry version minor
-# `x.y.z` this will bump y
-```
+  - `check`         Checks for PyUp Safety security vulnerabilities and against
+                PEP 508 markers provided in Pipfile.
+  - `clean`        Uninstalls all packages not specified in Pipfile.lock.
+  - `graph`         Displays currently-installed dependency graph information.
+  - `install`       Installs provided packages and adds them to Pipfile, or (if no
+                packages are given), installs all packages from Pipfile.
+  - `lock`          Generates Pipfile.lock.
+  - `open`          View a given module in your editor.
+  - `requirements`  Generate a requirements.txt from Pipfile.lock.
+  - `run`           Spawns a command installed into the virtualenv.
+  - `scripts`       Lists scripts in current environment config.
+  - `shell`         Spawns a shell within the virtualenv.
+  - `sync`          Installs all packages specified in Pipfile.lock.
+  - `uninstall`     Uninstalls a provided package and removes it from Pipfile.
+  - `update`       Runs lock, then sync.
+  - `upgrade`       Resolves provided packages and adds them to Pipfile, or (if no
+                packages are given), merges results to Pipfile.lock
+  - `verify`        Verify the hash in Pipfile.lock is up-to-date.
 
-```bash
-poetry version major
-# `x.y.z` this will bump x
-```
 
-## Packaging
-
-```bash
-poetry package
-# need pypy credentials
-```
+![legobadge](https://github.com/meltred/lego/assets/82411321/ba2e2850-6cf8-468e-817b-62692045c98e)
