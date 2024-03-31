@@ -1,4 +1,8 @@
-# Lego - Python Project Bootstrapping for AI
+<div align="center">
+    <img src="https://github.com/meltred/lego/assets/82411321/36de7d4d-9eed-4685-899b-39e8f863a665" alt="Lego Text Logo" />
+</div>
+
+# Lego - Python Project Bootstrapper for AI
 
 Using [Pipenv](https://pipenv.pypa.io/), `Pipenv` is also a Virtualization and Dependencies manager like `Poetry`
 
