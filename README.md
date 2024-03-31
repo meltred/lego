@@ -1,4 +1,8 @@
-# Lego - Python Language Practicing
+<div align="center">
+    <img src="https://github.com/meltred/lego/assets/82411321/36de7d4d-9eed-4685-899b-39e8f863a665" alt="Lego Text Logo" />
+</div>
+
+# Lego - Python Project Bootstrapper for AI
 
 ### Project Setup
 
@@ -113,3 +117,5 @@ poetry version major
 poetry package
 # need pypy credentials
 ```
+
+![legobadge](https://github.com/meltred/lego/assets/82411321/ba2e2850-6cf8-468e-817b-62692045c98e)
